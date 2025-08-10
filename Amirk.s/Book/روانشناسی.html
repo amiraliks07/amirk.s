@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>روانشناسی | فروشگاه کتاب</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: #f7faf9;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(to left, #c31432, #240b36);
+      color: white;
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #240b36;
+    }
+
+    .about, .reviews {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      text-align: justify;
+    }
+
+    .features, .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .feature-card, .book-card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover, .book-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card h3, .book-card h4 {
+      color: #240b36;
+      margin-bottom: 0.5rem;
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    .review {
+      border-bottom: 1px solid #eee;
+      padding: 1rem 0;
+    }
+
+    .review:last-child {
+      border-bottom: none;
+    }
+
+    .review strong {
+      color: #240b36;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #240b36;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #1a0728;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🧠 روانشناسی</h1>
+    <p>کتاب‌های روانشناسی برای خودشناسی، سلامت روان و درک بهتر روابط انسانی.</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">درباره این بخش</h2>
+    <div class="about">
+      <p>
+        در بخش روانشناسی فروشگاه ما، مجموعه‌ای از کتاب‌های تاثیرگذار برای درک بهتر ذهن، احساسات و روابط انسانی گردآوری شده‌اند. از مباحث درمانی و سلامت روان، تا خودشناسی، شناخت اختلالات، و بهبود مهارت‌های ارتباطی، این کتاب‌ها به شما کمک می‌کنند زندگی متعادل‌تر و آگاهانه‌تری داشته باشید.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">ویژگی‌های کلیدی این دسته</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>🧭 خودشناسی عمیق</h3>
+        <p>کمک به شناخت بهتر خود، ارزش‌ها و انگیزه‌ها.</p>
+      </div>
+      <div class="feature-card">
+        <h3>💬 بهبود روابط</h3>
+        <p>تکنیک‌ها و مهارت‌های موثر برای ارتباط بهتر با دیگران.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🧘 سلامت روان</h3>
+        <p>آموزش مدیریت استرس، اضطراب و بهبود کیفیت زندگی.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📖 نویسندگان معتبر</h3>
+        <p>آثار روانشناسان و متخصصان شناخته‌شده دنیا.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">📚 چند کتاب پیشنهادی</h2>
+    <div class="books-grid">
+      <div class="book-card">
+        <img src="https://img.ketabrah.ir/img/l/5538560654584982.jpg" alt="کتاب 1">
+        <h4>انسان در جستجوی معنا</h4>
+        <p>ویکتور فرانکل، روایت تکان‌دهنده‌ای از بقا و معنا در شرایط سخت.</p>
+      </div>
+      <div class="book-card">
+        <img src="https://ravabook.ir/content/images/thumbs/0002493_-.jpeg" alt="کتاب 2">
+        <h4>روانشناسی اجتماعی</h4>
+        <p>درک رفتار انسان در اجتماع و تعاملات گروهی.</p>
+      </div>
+      <div class="book-card">
+        <img src="https://nashrenovin.ir/wp-content/uploads/2022/04/Thinking-Fast-and-Slow.jpg" alt="کتاب 3">
+        <h4>تفکر سریع و کند</h4>
+        <p>دنیل کانمن، بررسی نحوه تصمیم‌گیری و خطاهای ذهنی.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">💬 نظرات کاربران</h2>
+    <div class="reviews">
+      <div class="review">
+        <strong>زهرا:</strong>
+        <p>بخش روانشناسی فوق‌العاده بود، انتخاب کتاب‌ها دقیق و متنوعه.</p>
+      </div>
+      <div class="review">
+        <strong>حسین:</strong>
+        <p>ارسال سریع و توضیحات دقیق. بسیار راضی‌ام.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <a href="/shop/psychology">🛒 همین حالا خرید کنید</a>
+  </div>
+
+</body>
+</html>

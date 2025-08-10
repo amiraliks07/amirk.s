@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>کتاب کیمیاگر</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+        :root {
+            --bg-color: #fffaf0;
+            --text-color: #1e1e1e;
+            --card-bg: #ffffff;
+            --highlight: #c8ad7f;
+        }
+
+        body.dark-mode {
+            --bg-color: #1e1e1e;
+            --text-color: #f0e6d2;
+            --card-bg: #2b2b2b;
+            --highlight: #d4af37;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            direction: rtl;
+            transition: all 0.4s ease;
+        }
+
+        header {
+            background-color: var(--highlight);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .toggle-mode {
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background: var(--card-bg);
+            color: var(--text-color);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--highlight);
+        }
+
+        .toggle-button {
+            background-color: var(--highlight);
+            color: var(--text-color);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .quote {
+            font-style: italic;
+            border-right: 4px solid var(--highlight);
+            padding-right: 15px;
+            margin: 15px 0;
+            color: var(--text-color);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--highlight);
+            color: var(--text-color);
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .gallery img {
+                width: 100%;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="toggle-mode" onclick="toggleDarkMode()">🌓 حالت تیره / روشن</button>
+
+    <header>
+        <h1> معرفی کتاب کیمیاگر</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>درباره کتاب</h2>
+            <p>
+                سانتیاگو زادگاهش را رها می‌کند و به شمال آفریقا می‌رود تا در نزدیکی اهرام مصر گنجی مدفون‌شده را پیدا کند. پائولو کوئیلو (Paulo Coelho) در کتاب کیمیاگر (The Alchemist) با سبکی مشابه به داستان‌های شرقی، روایت‌گر قصه‌ی این پسر جوان است. او در مسیرش، با زنی کولی، مردی که خودش را پادشاه می‌داند و یک کیمیاگر آشنا شده و نیز عاشق فاطمه، دختر صحرا می‌شود. همه‌ی آن‌ها هدایت‌گر سانتیاگو در مسیر جست‌وجویش هستند. پئولو کوئیلو در این اثر از جملات قصار و پرمعنایی استفاده کرده که به سهم خود، داستان را بسیار زیبا و دل‌نشین کرده‌اند.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>خلاصه داستان</h2>
+            <button class="toggle-button" onclick="toggleSummary()"> نمایش  </button>
+            <div id="summary" style="display: none; margin-top: 15px;">
+                <p>
+                    جوان چوپان، ناامید از خانه‌ی آن پیرزن خارج شد و با خود عهد کرد که دیگر هرگز به خواب‌ها اهمیتی ندهد. همچنین به خاطر آورد که باید در طول روز به چند کار برسد؛ به دکان بقالی رفته و مقداری مواد غذایی خریداری کند. کتابش را با یک کتاب قطورتر مبادله کرده و بر روی نیمکتی در میدان اصلی شهر بنشیند تا نوشیدنی تازه‌ای را که خریداری کرده بود، امتحان کند. چرا که روز گرمی بود و او موفق می‌شد کمی بدن خود را خنک کند. گوسفندان در دروازه‌ی ورودی شهر و در اصطبل یکی از دوستان جدیدش بودند. او با مردم بسیاری در آن اطراف آشنا بود و به همین خاطر بود که مسافرت را بسیار دوست داشت.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>نقل‌قول‌های ماندگار</h2>
+            <div class="quote">"اگر چیزی را از ته دل بخواهی، تمام هستی برای رسیدن به آن با تو همراه می‌شود."</div>
+            <div class="quote">"همه آدم‌ها، در ابتدای جوانی، می‌دانند افسانه شخصی‌شان چیست."</div>
+            <div class="quote">"راز زندگی در هفت کلمه خلاصه می‌شود: وقتی عاشق باشی، همه چیز معنا پیدا می‌کند."</div>
+        </div>
+
+        <div class="card">
+            <h2>تصاویر کتاب</h2>
+            <div class="gallery">
+                <img src="img\1-40110-5p4z.jpg" alt="">
+                <img src="img\1-40110-r1vg.jpg" alt="">
+                <img src="img\unnamed.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        ساخته شده برای دوست‌داران ادبیات و کتاب 
+    </footer>
+
+    <script>
+        function toggleSummary() {
+            const summary = document.getElementById("summary");
+            summary.style.display = summary.style.display === "none" ? "block" : "none";
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+
+</html>
