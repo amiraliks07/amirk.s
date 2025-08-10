@@ -1,201 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>رمان و داستان | فروشگاه کتاب</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
-
-    body {
-      margin: 0;
-      font-family: 'Vazirmatn', sans-serif;
-      background: #fffdf9;
-      color: #333;
-      line-height: 1.8;
-    }
-
-    header {
-      background: linear-gradient(to left, #ff6a00, #ee0979);
-      color: white;
-      text-align: center;
-      padding: 4rem 1.5rem 3rem;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    header p {
-      font-size: 1.3rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 2rem 1.5rem;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #ee0979;
-    }
-
-    .about, .reviews {
-      background: #fff;
-      border-radius: 1rem;
-      padding: 2rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-      text-align: justify;
-    }
-
-    .features, .books-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .feature-card, .book-card {
-      background: #fff;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .feature-card:hover, .book-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .feature-card h3, .book-card h4 {
-      color: #ee0979;
-      margin-bottom: 0.5rem;
-    }
-
-    .book-card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 1rem 1rem 0 0;
-    }
-
-    .review {
-      border-bottom: 1px solid #eee;
-      padding: 1rem 0;
-    }
-
-    .review:last-child {
-      border-bottom: none;
-    }
-
-    .review strong {
-      color: #ee0979;
-    }
-
-    .cta {
-      text-align: center;
-      margin: 3rem 0;
-    }
-
-    .cta a {
-      display: inline-block;
-      background: #ee0979;
-      color: white;
-      padding: 1rem 2.5rem;
-      border-radius: 2rem;
-      text-decoration: none;
-      font-size: 1.1rem;
-      transition: background 0.3s ease;
-    }
-
-    .cta a:hover {
-      background: #c40661;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>📖 رمان و داستان</h1>
-    <p>جهانی از خیال، احساسات و روایت‌هایی که شما را غرق خود می‌کنند.</p>
-  </header>
-
-  <section>
-    <h2 class="section-title">درباره این بخش</h2>
-    <div class="about">
-      <p>
-        در دنیای رمان و داستان، شما با شخصیت‌هایی آشنا می‌شوید که شاید واقعی نباشند، اما احساساتی واقعی را به شما منتقل می‌کنند. از عاشقانه‌های پرشور تا داستان‌های پلیسی، رمان‌های کلاسیک تا معاصر، این بخش پر از روایت‌هایی است که ذهن و دل شما را درگیر می‌کنند.
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">ویژگی‌های برجسته</h2>
-    <div class="features">
-      <div class="feature-card">
-        <h3>✨ داستان‌های الهام‌بخش</h3>
-        <p>روایت‌هایی که شما را به تفکر و احساس وا‌می‌دارند.</p>
-      </div>
-      <div class="feature-card">
-        <h3>🌍 تنوع ژانر</h3>
-        <p>از عاشقانه و اجتماعی تا معمایی و فانتزی.</p>
-      </div>
-      <div class="feature-card">
-        <h3>🖋️ نویسندگان مشهور</h3>
-        <p>آثار نویسندگان برجسته ایرانی و جهانی.</p>
-      </div>
-      <div class="feature-card">
-        <h3>🎭 تجربه‌ی عاطفی</h3>
-        <p>داستان‌هایی که شما را به گریه، خنده یا هیجان می‌کشانند.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">📚 چند رمان پیشنهادی</h2>
-    <div class="books-grid">
-      <div class="book-card">
-        <img src="styel\img\kimiagar.jpg" alt="رمان 1">
-        <h4>کیمیاگر</h4>
-        <p>پائولو کوئیلو، داستانی پر از معنا درباره سفر و کشف درون.</p>
-      </div>
-      <div class="book-card">
-        <img src="https://negahpub.com/wp-content/uploads/2022/09/cheshmhayash-galingor-F-1-jpg.webp" alt="رمان 2">
-        <h4>چشم‌هایش</h4>
-        <p>بزرگ علوی، رمانی سیاسی‌عاشقانه از دل تاریخ معاصر ایران.</p>
-      </div>
-      <div class="book-card">
-        <img src="https://www.iranketab.ir/Images/ProductImages/02f10e5827f64da38afbc15919e8f1a8.jpg" alt="رمان 3">
-        <h4>جزء از کل</h4>
-        <p>استیو تولتز، داستانی خلاقانه و پر از طنز تلخ و تفکر.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">💬 نظرات کاربران</h2>
-    <div class="reviews">
-      <div class="review">
-        <strong>محمد:</strong>
-        <p>بهترین انتخاب‌ها برای علاقه‌مندان به داستان. خیلی راضی بودم.</p>
-      </div>
-      <div class="review">
-        <strong>الهام:</strong>
-        <p>چقدر عالی که رمان‌های ایرانی هم در بین پیشنهادات هست!</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="cta">
-    <a href="/shop/fiction">🛒 خرید رمان‌های دلخواه</a>
-  </div>
-
-</body>
-</html>
